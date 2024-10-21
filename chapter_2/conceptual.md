@@ -1,4 +1,4 @@
-1. For each of parts (a) through (d), indicate whether we would generally expect the performance of a flexible statistical learning method to be better or worse than an inflexible method. Justify your answer.
+### 1. For each of parts (a) through (d), indicate whether we would generally expect the performance of a flexible statistical learning method to be better or worse than an inflexible method. Justify your answer.
 
 (a) We would expect a flexible method to perform better than a less flexible method. Since *n* is large, the flexible method has less of a risk of overfitting and will be able to fit the shape of the data better because it has less bias. 
 
@@ -9,7 +9,7 @@
 (d) We would expect the flexible method to peform worse than a less flexible method. The increased bias in the inflexible method will allow it to generate consistent predictions despite the high variance. The more flexible method will likely overfit to the noise. 
 
 
-2. Explain whether each scenario is a classification or regression problem, and indicate whether we are most interested in inference or prediction. Finally, provide *n* and *p*.
+### 2. Explain whether each scenario is a classification or regression problem, and indicate whether we are most interested in inference or prediction. Finally, provide *n* and *p*.
 
 (a) This is a **regression** problem because the target variable, CEO salary is quantitative. We are interested in which factors affect CEO salary, which is a goal of **inference**. This problem has *n* = 500 and *p* = 3.
 
@@ -17,7 +17,8 @@
 
 (c) This is a **regression** problem because the target variable, %change in exchange rate, is quantitative. We are looking to **predict** the rate based on our features. This problem has *n* = 52 and *p* = 3. 
 
-3. We now revisit the bias-variance decomposition.
+### 3. We now revisit the bias-variance decomposition.
+
 (a) ![bias-variance relationship](./pics/bias_var_plot.png)
 
 (b) **Squared bias**: This is the error in the model introduced by the difference of our estimate and the true underlying function. A more flexible model will be increasingly similar, and the squared bias will decrease as the flexibility increases.
@@ -30,7 +31,7 @@
 
 **Bayes error**: This term is constant since by definition it does not depend on X and therefore on the flexibility of the model.
 
-4. You will now think of some real-life applications for statistical learn- ing.
+### 4. You will now think of some real-life applications for statistical learn- ing.
 
 (a) 1. Classifying a credit card transaction as fraudulent or not based on time, amount, location, etc. This would be a prediction problem because we are primarily concerned with properly estimating whether a transaction is fraudulent rather than figuring out what influences a transaction being fraudulent. 
 
@@ -50,15 +51,15 @@
 
     3. Detecting outliers.
 
-5. What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression or classification? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
+### 5. What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression or classification? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
 
 A more flexible model is better for regresssion or classification as it is able to fit non-linear or complicated data more effectivley. However, it is also more prone to overfitting, as it may begin to fit the random noise in the data. However, less flexible models are simpler, take less time to train, and can be less computationally intensive. More flexible models are preferred when we have a large *n* and highly non-linear data. Inflexible models are preferred when we have a small *n* or very high variance data. 
 
-6. Describe the differences between a parametric and a non-parametric statistical learning approach. What are the advantages of a para- metric approach to regression or classification (as opposed to a non- parametric approach)? What are its disadvantages?
+### 6. Describe the differences between a parametric and a non-parametric statistical learning approach. What are the advantages of a para- metric approach to regression or classification (as opposed to a non- parametric approach)? What are its disadvantages?
 
 Parametric methods make an underlying assumption about the relationship between our target and features. For example, linear regression assumes that there is a linear relationship between our Xs and y. Non-parametric methods do not make any assumptions about the shape of the data and instead simply try to fit each point as close as possible while maintaining the function's smoothness. The parametric approach is simpler and easier to train and can be much easier to interpret for inference tasks. However, if you choose the wrong underlying assumptions, the parametric method risks performing very poorly when trying to predict the data.
 
-7. The table below provides a training data set containing six observations, three predictors, and one qualitative response variable.
+### 7. The table below provides a training data set containing six observations, three predictors, and one qualitative response variable.
 
 | Obs. | X1 | X2 | X3 | Y |
 |------|----|----|----|---|
