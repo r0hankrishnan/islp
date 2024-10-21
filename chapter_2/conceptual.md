@@ -18,7 +18,7 @@
 (c) This is a **regression** problem because the target variable, %change in exchange rate, is quantitative. We are looking to **predict** the rate based on our features. This problem has *n* = 52 and *p* = 3. 
 
 3. We now revisit the bias-variance decomposition.
-(a) ![bias-variance relationship](bias_var_plot.png)
+(a) ![bias-variance relationship](./pics/bias_var_plot.png)
 
 (b) **Squared bias**: This is the error in the model introduced by the difference of our estimate and the true underlying function. A more flexible model will be increasingly similar, and the squared bias will decrease as the flexibility increases.
 
